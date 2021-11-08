@@ -1,0 +1,70 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+}
+
+.header-container {
+    font-family: 'Fruktur', cursive;
+    font-size: 1rem;
+    background-color: rgb(37, 35, 37);
+    min-height: 100px;
+    width: 100%;
+    color: white;
+    margin-bottom: 1px;
+}
+
+header {
+    max-width: 1024px;
+    background-color: rgb(37, 35, 37);
+    min-height: 100px;
+    /*centralizer no container*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /*alnhar o menu no centro do container*/
+    align-items: center;
+}
+
+.container {
+    min-height: 500px;
+    /*(min) deixar o height flexivel*/
+    max-width: 1024px;
+    display: flex;
+    /*criar os box em linha-tem que ser aplicado no pai(no caso conteiner)*/
+    flex-wrap: wrap;
+    /* deixaar eles com espaço*/
+    justify-content: space-between;
+    /*justificar conteudo com espaço entre eles*/
+    padding-top: 5px;
+}
+
+.formulario {
+    border-width: thin;
+    border-style: solid;
+    border-color: #cac6c6;
+    padding: 15px 15px 15px 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #fffafa;
+}
+
+.icon-center {
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: 'Fruktur', cursive;
+}
+
+label {
+    display: inline-block;
+    width: 230px;
+}
+
+.btncenter {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+footer {
+    padding: 0px 450px;
+    text-align: center;
+}

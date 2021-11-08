@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios-Senai-JS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="header-container">
+        <header>
+            <div class="logo"><span class="highlight">PORTFÓLIO</span> - MICAEL JÚNIO</div>
+
+            <nav>
+                <img src="img/senai-logo.svg" alt="logosenai" width="150" height="100"></a>
+            </nav>
+        </header>
+    </div>
+    <section>
+        <div class="container">
+            <!-- inicio do formulario restaurante - EX1 -->
+            <div class="formulario">
+                <form>
+                    <div>
+                        <div class="icon-center">
+                            <h5><img src="img/restaurante.png" alt="" width="50" height="50"> - Exercício 1</h5>
+                        </div>
+                        <!-- solicita o valor do kilo -->
+                        <label for="kilo">Informe o valor do Kg:</label>
+                        <input type="number" name="kilo" id="kilo">
+                        <br><br>
+                        <!-- solicita o peso do prato  -->
+                        <label for="peso">Informe o peso do prato:</label>
+                        <input type="number" name="peso" id="peso">
+                    </div>
+                    <br>
+                    <div class="btncenter">
+                        <button type="button" class="btn btn-primary" id="btnCalcularprato">Calcular</button>
+                        <button type="reset" class="btn btn-info">Limpar</button>
+                    </div>
+                </form>
+
+                <div class="card-body">
+                    <div class="card-body">
+                        <h5 class="card-title">O valor do seu prato é:</h5>
+                        <p class="card-text" id="valorfinalprato"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- inicio do formulario lan house - EX2 -->
+            <div class="formulario">
+                <form>
+                    <div>
+                        <div class="icon-center">
+                            <h5><img src="img/lan.png" alt="" width="50" height="50"> - Exercício 2</h5>
+                        </div>
+                        <!-- solicita dos minutos -->
+                        <label for="valormnt">Informe o valor dos 15Mnts:</label>
+                        <input type="number" name="valormnt" id="valormnt">
+                        <br><br>
+                        <!-- solicita o tempo de uso  -->
+                        <label for="tempuso">Informe o tempo de uso do PC:</label>
+                        <input type="number" name="tempuso" id="tempuso">
+                    </div>
+                    <br>
+                    <div class="btncenter">
+                        <button type="button" class="btn btn-primary" id="btnCalcularmnt">Calcular</button>
+                        <button type="reset" class="btn btn-info">Limpar</button>
+                    </div>
+                </form>
+
+                <div class="card-body">
+                    <div class="card-body">
+                        <h5 class="card-title">O valor a ser pago é:</h5>
+                        <h5 class="card-text" id="valorfinaluso"></h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- inicio do formulario par ou impar - EX3 -->
+            <div class="formulario">
+                <form>
+                    <div>
+                        <div class="icon-center">
+                            <h5><img src="img/impar e par.png" alt="" width="50" height="50"> - Exercício 3</h5>
+                        </div>
+                        <!-- solicita o número para verificar -->
+                        <label for="nmr">Informe um número:</label>
+                        <input type="number" name="nmr" id="nmr">
+                        <br><br>
+                    </div>
+                    <br>
+                    <div class="btncenter">
+                        <button type="button" class="btn btn-primary" id="btnVerificar">Verificar</button>
+                        <button type="reset" class="btn btn-info">Limpar</button>
+                    </div>
+                </form>
+                <div class="card-body">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <h5 class="card-text" id="result"></h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- inicio do formulario Farmacia - EX4 -->
+            <div class="formulario">
+                <form>
+                    <div>
+                        <div class="icon-center">
+                            <h5><img src="img/farmacia.png" alt="" width="50" height="50"> - Exercício 4</h5>
+                        </div>
+                        <!-- solicita o nome do medicamento -->
+                        <label for="namemedc">Nome do medicamento:</label>
+                        <input type="text" name="namemedc" id="namemedc">
+                        <br><br>
+                        <!-- solicita o valor do medicamento  -->
+                        <label for="valormedc">Valor do medicamento:</label>
+                        <input type="number" name="valormedc" id="valormedc">
+                    </div>
+                    <br>
+                    <div class="btncenter">
+                        <button type="button" class="btn btn-primary" id="btnCalcularfarmed">Verificar</button>
+                        <button type="reset" class="btn btn-info">Limpar</button>
+                    </div>
+                </form>
+
+                <div class="card-body">
+                    <div class="card-body">
+                        <p class="card-title">BioFarma - Promoção final de Ano</p>
+                        <p class="card-text" id="valorfinal"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- inicio do formulario Infração de Trânsito - EX5 -->
+            <div class="formulario">
+                <form>
+                    <div>
+                        <div class="icon-center">
+                            <h5><img src="img/pare.png" alt="" width="50" height="50"> - Exercício 5</h5>
+                        </div>
+                        <!-- solicita o valor do kilo -->
+                        <label for="velper">Informe a velocidade permitida:</label>
+                        <input type="number" name="velper" id="velper">
+                        <br><br>
+                        <!-- solicita o peso do prato  -->
+                        <label for="velmot">Informe a velocidade do veículo:</label>
+                        <input type="number" name="velmot" id="velmot">
+                    </div>
+                    <br>
+                    <div class="btncenter">
+                        <button type="button" class="btn btn-primary" id="btnCalcularinfra">Verificar</button>
+                        <button type="reset" class="btn btn-info">Limpar</button>
+                    </div>
+                </form>
+
+                <div class="card-body">
+                    <div class="card-body">
+                        <h5 class="card-title">Status da Infração:</h5>
+                        <h5 class="card-text" id="infrafinal"></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- esse é meu rodape -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a class="navbar-brand" href="#">
+                <img src="img/senai-logo.svg" alt="" class="bi" width="50" height="50">
+            </a>
+            <span class="text-black">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">© 2021 Company, Inc</font>
+                </font>
+            </span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <!-- Icons -->
+            <a href="https://pt-br.facebook.com/login.php/" target="_blank">
+                <i class="bi bi-facebook me-2" style="font-size: 1.5rem; color: rgb(2, 2, 2);"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="bi bi-instagram" style="font-size: 1.5rem; color: rgb(3, 3, 3);"></i>
+            </a>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
