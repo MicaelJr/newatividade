@@ -122,3 +122,17 @@ function calcularinfracao() {
 }
 //adicionando um evento de click ao botao id=btnCalcular onde ele chama a function calcularinfracao
 btnCalcularinfra.addEventListener('click', calcularinfracao)
+
+
+
+function calculotabuada() {
+
+    var tab = nt.value;
+
+    for (let i = 1; i <= 10; i++) {
+        
+        resulttabuada.innerHTML += (`${tab} x ${i}: ${tab * 1} <br>`)
+    }
+    
+}
+btntabuada.addEventListener('click',calculotabuada)
